@@ -48,7 +48,7 @@ function spiral($size){
 
   for($i = $square; $i > 0; $i--) {
     $array[$y][$x] = "$i $x $y";
-    
+
     $new_x = $x + $dx;
     $new_y = $y + $dy;
 
@@ -59,7 +59,7 @@ function spiral($size){
       $res = turn($dx, $dy);
       $dx = $res[0];
       $dy = $res[1];
-      
+
       $x = $x + $dx;
       $y = $y + $dy;
     }
